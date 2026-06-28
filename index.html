@@ -653,68 +653,83 @@
 
   </div>
 
+
+  <section id="interactive-tools">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Interactive Tools</h2>
+      <p>Custom calculators and lead tools I can build for business websites.</p>
+    </div>
+
+    <div class="calculator-grid">
+
+      <article class="portfolio-item calculator-card">
+        <span>Interactive Lead Tool</span>
+        <h3>Tree Service Cost Calculator</h3>
+        <p>
+          A custom estimate tool that helps visitors understand possible tree removal costs
+          while moving them toward a quote request. Useful for contractors, restoration companies,
+          roofers, landscapers, cleaning companies, and other service businesses.
+        </p>
+
+        <p style="margin-top:18px;">
+          <a class="btn btn-primary"
+             href="https://wheelingtreeremoval.com/how-much-does-tree-service-cost-in-wheeling-wv.html"
+             target="_blank"
+             rel="noopener">
+             View Calculator →
+          </a>
+        </p>
+      </article>
+
+      <article class="portfolio-item calculator-card">
+        <span>Sample Calculator</span>
+        <h3>Restoration Cost Estimator</h3>
+        <p>
+          A simple demo calculator for water, fire, mold, or storm cleanup estimates.
+          This kind of tool helps visitors understand cost ranges while pushing them toward a quote request.
+        </p>
+
+        <div class="mini-calc">
+          <label for="calc-service">Service Type</label>
+          <select id="calc-service">
+            <option value="7">Water Damage</option>
+            <option value="10">Fire / Smoke Damage</option>
+            <option value="8">Mold Remediation</option>
+            <option value="6">Storm Cleanup</option>
+          </select>
+
+          <label for="calc-size">Affected Area</label>
+          <select id="calc-size">
+            <option value="250">Small Room</option>
+            <option value="750">Multiple Rooms</option>
+            <option value="1500">Large Area</option>
+            <option value="3000">Whole Property</option>
+          </select>
+
+          <label for="calc-urgency">Urgency</label>
+          <select id="calc-urgency">
+            <option value="1">Standard</option>
+            <option value="1.25">Emergency / After Hours</option>
+          </select>
+
+          <button class="btn btn-primary" type="button" onclick="estimateRestorationCost()">
+            Estimate Cost
+          </button>
+
+          <div class="calc-result" id="calc-result">
+            Estimated range will appear here.
+          </div>
+        </div>
+      </article>
+
+    </div>
+
+  </div>
 </section>
 
-  <article class="portfolio-item">
-  <span>Interactive Lead Tool</span>
-  <h3>Tree Service Cost Calculator</h3>
-  <p>
-    A custom estimate tool that helps visitors understand possible tree removal costs
-    while moving them toward a quote request. Useful for contractors, restoration companies,
-    roofers, landscapers, cleaning companies, and other service businesses.
-  </p>
-
-  <p style="margin-top:18px;">
-    <a class="btn btn-primary"
-       href="https://wheelingtreeremoval.com/how-much-does-tree-service-cost-in-wheeling-wv.html"
-       target="_blank"
-       rel="noopener">
-       View Calculator →
-    </a>
-  </p>
-</article>
-
-<article class="portfolio-item">
-  <span>Sample Calculator</span>
-  <h3>Restoration Cost Estimator</h3>
-  <p>
-    A simple demo calculator for water, fire, mold, or storm cleanup estimates.
-    This kind of tool helps visitors understand cost ranges while pushing them toward a quote request.
-  </p>
-
-  <div class="mini-calc">
-    <label for="calc-service">Service Type</label>
-    <select id="calc-service">
-      <option value="7">Water Damage</option>
-      <option value="10">Fire / Smoke Damage</option>
-      <option value="8">Mold Remediation</option>
-      <option value="6">Storm Cleanup</option>
-    </select>
-
-    <label for="calc-size">Affected Area</label>
-    <select id="calc-size">
-      <option value="250">Small Room</option>
-      <option value="750">Multiple Rooms</option>
-      <option value="1500">Large Area</option>
-      <option value="3000">Whole Property</option>
-    </select>
-
-    <label for="calc-urgency">Urgency</label>
-    <select id="calc-urgency">
-      <option value="1">Standard</option>
-      <option value="1.25">Emergency / After Hours</option>
-    </select>
-
-    <button class="btn btn-primary" type="button" onclick="estimateRestorationCost()">
-      Estimate Cost
-    </button>
-
-    <div class="calc-result" id="calc-result">
-      Estimated range will appear here.
-    </div>
-  </div>
-</article>
-
+  
 <style>
   .mini-calc {
     margin-top: 20px;
