@@ -674,6 +674,101 @@
   </p>
 </article>
 
+<article class="portfolio-item">
+  <span>Sample Calculator</span>
+  <h3>Restoration Cost Estimator</h3>
+  <p>
+    A simple demo calculator for water, fire, mold, or storm cleanup estimates.
+    This kind of tool helps visitors understand cost ranges while pushing them toward a quote request.
+  </p>
+
+  <div class="mini-calc">
+    <label for="calc-service">Service Type</label>
+    <select id="calc-service">
+      <option value="7">Water Damage</option>
+      <option value="10">Fire / Smoke Damage</option>
+      <option value="8">Mold Remediation</option>
+      <option value="6">Storm Cleanup</option>
+    </select>
+
+    <label for="calc-size">Affected Area</label>
+    <select id="calc-size">
+      <option value="250">Small Room</option>
+      <option value="750">Multiple Rooms</option>
+      <option value="1500">Large Area</option>
+      <option value="3000">Whole Property</option>
+    </select>
+
+    <label for="calc-urgency">Urgency</label>
+    <select id="calc-urgency">
+      <option value="1">Standard</option>
+      <option value="1.25">Emergency / After Hours</option>
+    </select>
+
+    <button class="btn btn-primary" type="button" onclick="estimateRestorationCost()">
+      Estimate Cost
+    </button>
+
+    <div class="calc-result" id="calc-result">
+      Estimated range will appear here.
+    </div>
+  </div>
+</article>
+
+<style>
+  .mini-calc {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    background: rgba(255,255,255,.05);
+  }
+
+  .mini-calc label {
+    display: block;
+    margin: 12px 0 6px;
+    font-weight: 800;
+  }
+
+  .mini-calc select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    background: #101826;
+    color: white;
+  }
+
+  .mini-calc button {
+    width: 100%;
+    margin-top: 16px;
+  }
+
+  .calc-result {
+    margin-top: 16px;
+    padding: 16px;
+    border-radius: 14px;
+    background: rgba(225,29,46,.14);
+    color: white;
+    font-weight: 800;
+  }
+</style>
+
+<script>
+  function estimateRestorationCost() {
+    const serviceRate = Number(document.getElementById("calc-service").value);
+    const area = Number(document.getElementById("calc-size").value);
+    const urgency = Number(document.getElementById("calc-urgency").value);
+
+    const base = serviceRate * area * urgency;
+    const low = Math.round(base * 0.8);
+    const high = Math.round(base * 1.35);
+
+    document.getElementById("calc-result").textContent =
+      `Estimated range: $${low.toLocaleString()} – $${high.toLocaleString()}. Final pricing depends on damage severity, materials, access, insurance requirements, and inspection.`;
+  }
+</script>
+  
   
   <section id="contact" class="contact">
     <div class="container contact-box">
