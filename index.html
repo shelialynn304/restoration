@@ -1,409 +1,640 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-
-<title>Panhandle Cleaning & Restoration | 24/7 Emergency Restoration</title>
-
-<meta name="description"
-content="Water damage, fire damage, mold remediation and storm restoration. Trusted since 1977. 24/7 emergency response.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap" rel="stylesheet">
-
-<style>
-
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-}
-
-body{
-font-family:Inter,sans-serif;
-background:#f5f7fa;
-color:#222;
-line-height:1.6;
-}
-
-a{
-text-decoration:none;
-}
-
-img{
-max-width:100%;
-display:block;
-}
-
-.topbar{
-
-background:#b30000;
-color:white;
-
-padding:12px 20px;
-
-display:flex;
-justify-content:center;
-gap:40px;
-font-weight:700;
-font-size:.95rem;
-
-}
-
-header{
-
-background:white;
-position:sticky;
-top:0;
-z-index:100;
-
-box-shadow:0 2px 10px rgba(0,0,0,.08);
-
-}
-
-nav{
-
-max-width:1300px;
-margin:auto;
-
-display:flex;
-justify-content:space-between;
-align-items:center;
-
-padding:18px 24px;
-
-}
-
-.logo{
-
-font-size:1.5rem;
-font-weight:800;
-
-color:#0b2f4d;
-
-}
-
-.logo span{
-color:#c90000;
-}
-
-nav ul{
-
-display:flex;
-gap:35px;
-list-style:none;
-
-}
-
-nav a{
-
-color:#222;
-font-weight:600;
-
-}
-
-.btn{
-
-padding:15px 28px;
-
-border-radius:50px;
-
-font-weight:700;
-
-transition:.25s;
-
-display:inline-block;
-
-}
-
-.btn-primary{
-
-background:#c90000;
-color:white;
-
-}
-
-.btn-primary:hover{
-
-background:#9d0000;
-
-}
-
-.btn-secondary{
-
-background:white;
-
-color:#0b2f4d;
-
-border:2px solid white;
-
-}
-
-.hero{
-
-min-height:88vh;
-
-display:flex;
-align-items:center;
-
-background:
-
-linear-gradient(rgba(9,25,40,.72),
-rgba(9,25,40,.72)),
-
-url(images/hero-water.jpg);
-
-background-size:cover;
-background-position:center;
-
-}
-
-.hero-content{
-
-max-width:1200px;
-
-margin:auto;
-
-padding:70px 30px;
-
-color:white;
-
-}
-
-.badge{
-
-display:inline-block;
-
-background:rgba(255,255,255,.12);
-
-padding:10px 18px;
-
-border-radius:40px;
-
-margin-bottom:24px;
-
-backdrop-filter:blur(8px);
-
-font-weight:700;
-
-}
-
-.hero h1{
-
-font-size:4rem;
-
-line-height:1.05;
-
-max-width:700px;
-
-margin-bottom:25px;
-
-}
-
-.hero p{
-
-font-size:1.25rem;
-
-max-width:650px;
-
-margin-bottom:40px;
-
-opacity:.95;
-
-}
-
-.hero-buttons{
-
-display:flex;
-gap:18px;
-flex-wrap:wrap;
-
-}
-
-.trust{
-
-margin-top:70px;
-
-display:flex;
-flex-wrap:wrap;
-gap:35px;
-
-}
-
-.trust div{
-
-background:rgba(255,255,255,.08);
-
-padding:18px 24px;
-
-border-radius:16px;
-
-backdrop-filter:blur(10px);
-
-}
-
-.trust strong{
-
-display:block;
-font-size:1.3rem;
-
-}
-
-@media(max-width:850px){
-
-.hero h1{
-
-font-size:2.7rem;
-
-}
-
-nav ul{
-
-display:none;
-
-}
-
-.topbar{
-
-flex-direction:column;
-gap:8px;
-
-text-align:center;
-
-}
-
-}
-
-</style>
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Website Demo Showcase | Custom Business Websites</title>
+  <meta name="description" content="A live showcase of custom website sections, tools, landing pages, lead forms, calculators, service pages, and conversion-focused features for small businesses." />
+
+  <style>
+    :root {
+      --bg: #070b12;
+      --bg-soft: #101826;
+      --card: #141f2f;
+      --text: #f5f7fb;
+      --muted: #aeb8c7;
+      --accent: #e11d2e;
+      --accent-2: #3b82f6;
+      --border: rgba(255,255,255,.12);
+      --shadow: 0 20px 60px rgba(0,0,0,.35);
+      --radius: 22px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(59,130,246,.25), transparent 35%),
+        radial-gradient(circle at top right, rgba(225,29,46,.2), transparent 32%),
+        var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1180px, calc(100% - 36px));
+      margin: 0 auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(7,11,18,.82);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid var(--border);
+    }
+
+    nav {
+      min-height: 74px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .logo {
+      font-weight: 900;
+      letter-spacing: -.04em;
+      font-size: 1.25rem;
+    }
+
+    .logo span {
+      color: var(--accent);
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-size: .95rem;
+      color: var(--muted);
+    }
+
+    .nav-links a:hover {
+      color: white;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 999px;
+      padding: 13px 22px;
+      font-weight: 800;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .btn-primary {
+      background: var(--accent);
+      color: white;
+      box-shadow: 0 12px 30px rgba(225,29,46,.35);
+    }
+
+    .btn-secondary {
+      border-color: var(--border);
+      color: white;
+      background: rgba(255,255,255,.06);
+    }
+
+    .hero {
+      padding: 96px 0 70px;
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.08fr .92fr;
+      gap: 44px;
+      align-items: center;
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      gap: 10px;
+      align-items: center;
+      color: #ffb4ba;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-size: .78rem;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      font-size: clamp(2.6rem, 7vw, 5.6rem);
+      line-height: .94;
+      letter-spacing: -.07em;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      color: var(--muted);
+      font-size: 1.18rem;
+      max-width: 650px;
+      margin-bottom: 34px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    .hero-card {
+      background: linear-gradient(145deg, rgba(255,255,255,.1), rgba(255,255,255,.035));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 26px;
+      box-shadow: var(--shadow);
+    }
+
+    .mock-browser {
+      background: #0b111c;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      overflow: hidden;
+    }
+
+    .browser-top {
+      padding: 14px;
+      display: flex;
+      gap: 8px;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .dot {
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: var(--accent);
+    }
+
+    .dot:nth-child(2) { background: #f59e0b; }
+    .dot:nth-child(3) { background: #22c55e; }
+
+    .browser-body {
+      padding: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .fake-hero {
+      height: 145px;
+      border-radius: 16px;
+      background:
+        linear-gradient(90deg, rgba(225,29,46,.7), rgba(59,130,246,.55)),
+        linear-gradient(135deg, #1f2937, #111827);
+    }
+
+    .fake-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 12px;
+    }
+
+    .fake-card {
+      height: 86px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.08);
+      border: 1px solid var(--border);
+    }
+
+    section {
+      padding: 72px 0;
+    }
+
+    .section-head {
+      max-width: 760px;
+      margin-bottom: 34px;
+    }
+
+    .section-head h2 {
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1;
+      letter-spacing: -.05em;
+      margin-bottom: 14px;
+    }
+
+    .section-head p {
+      color: var(--muted);
+      font-size: 1.05rem;
+    }
+
+    .showcase-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .feature-card {
+      background: linear-gradient(145deg, rgba(255,255,255,.085), rgba(255,255,255,.035));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+      min-height: 230px;
+      box-shadow: 0 14px 42px rgba(0,0,0,.22);
+      transition: transform .2s ease, border-color .2s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-5px);
+      border-color: rgba(255,255,255,.28);
+    }
+
+    .icon {
+      width: 52px;
+      height: 52px;
+      border-radius: 16px;
+      display: grid;
+      place-items: center;
+      background: rgba(225,29,46,.14);
+      color: white;
+      font-size: 1.45rem;
+      margin-bottom: 18px;
+    }
+
+    .feature-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+
+    .feature-card p {
+      color: var(--muted);
+      font-size: .98rem;
+    }
+
+    .demo-strip {
+      background: linear-gradient(90deg, rgba(225,29,46,.95), rgba(59,130,246,.95));
+      border-radius: var(--radius);
+      padding: 34px;
+      display: grid;
+      grid-template-columns: 1fr auto;
+      gap: 24px;
+      align-items: center;
+      box-shadow: var(--shadow);
+    }
+
+    .demo-strip h2 {
+      font-size: clamp(1.8rem, 4vw, 3rem);
+      line-height: 1;
+      letter-spacing: -.05em;
+      margin-bottom: 10px;
+    }
+
+    .demo-strip p {
+      color: rgba(255,255,255,.88);
+    }
+
+    .portfolio-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+    }
+
+    .portfolio-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    .portfolio-item span {
+      color: var(--accent);
+      font-weight: 900;
+      font-size: .82rem;
+      text-transform: uppercase;
+      letter-spacing: .12em;
+    }
+
+    .portfolio-item h3 {
+      margin: 8px 0;
+      font-size: 1.3rem;
+    }
+
+    .portfolio-item p {
+      color: var(--muted);
+    }
+
+    .contact {
+      background: var(--bg-soft);
+      border-top: 1px solid var(--border);
+    }
+
+    .contact-box {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px;
+      align-items: start;
+    }
+
+    form {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px;
+    }
+
+    label {
+      display: block;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+
+    input,
+    textarea,
+    select {
+      width: 100%;
+      padding: 14px 15px;
+      margin-bottom: 16px;
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      background: rgba(255,255,255,.06);
+      color: white;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 130px;
+      resize: vertical;
+    }
+
+    footer {
+      padding: 28px 0;
+      color: var(--muted);
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: .95rem;
+    }
+
+    @media (max-width: 900px) {
+      .hero-grid,
+      .contact-box,
+      .demo-strip {
+        grid-template-columns: 1fr;
+      }
+
+      .showcase-grid,
+      .portfolio-list {
+        grid-template-columns: 1fr;
+      }
+
+      .nav-links {
+        display: none;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<div class="topbar">
-
-<div>🚨 24/7 Emergency Response</div>
-
-<div>☎ 866-515-2364</div>
-
-<div>Free Inspection</div>
-
-</div>
-
 <header>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">Demo<span>Build</span></a>
 
-<nav>
+      <div class="nav-links">
+        <a href="#features">What I Build</a>
+        <a href="#demos">Demo Sections</a>
+        <a href="#industries">Industries</a>
+        <a href="#contact">Contact</a>
+      </div>
 
-<div class="logo">
-
-Panhandle <span>Restoration</span>
-
-</div>
-
-<ul>
-
-<li><a href="#">Services</a></li>
-<li><a href="#">Service Areas</a></li>
-<li><a href="#">Insurance</a></li>
-<li><a href="#">About</a></li>
-<li><a href="#">Contact</a></li>
-
-</ul>
-
-<a href="#" class="btn btn-primary">
-
-Emergency Help
-
-</a>
-
-</nav>
-
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+    </nav>
+  </div>
 </header>
 
-<section class="hero">
+<main>
 
-<div class="hero-content">
+  <section class="hero">
+    <div class="container hero-grid">
 
-<div class="badge">
+      <div>
+        <div class="eyebrow">Custom Website Showcase</div>
 
-Serving Families Since 1977
+        <h1>Websites that look good and actually do something.</h1>
 
-</div>
+        <p>
+          This is a live demo site showing the kinds of sections, tools, layouts,
+          lead forms, landing pages, and interactive features I can build for local businesses.
+          Pretty websites are nice. Websites that bring in leads are better.
+        </p>
 
-<h1>
+        <div class="hero-actions">
+          <a href="#features" class="btn btn-primary">View Features</a>
+          <a href="#contact" class="btn btn-secondary">Request a Demo</a>
+        </div>
+      </div>
 
-When Disaster Strikes,
-We're Ready.
+      <div class="hero-card">
+        <div class="mock-browser">
+          <div class="browser-top">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
 
-</h1>
+          <div class="browser-body">
+            <div class="fake-hero"></div>
+            <div class="fake-row">
+              <div class="fake-card"></div>
+              <div class="fake-card"></div>
+              <div class="fake-card"></div>
+            </div>
+            <div class="fake-card"></div>
+          </div>
+        </div>
+      </div>
 
-<p>
+    </div>
+  </section>
 
-Water damage, fire restoration, mold remediation, storm cleanup, and reconstruction.
-Our certified restoration specialists are available 24 hours a day to help protect your home and get your life back to normal.
+  <section id="features">
+    <div class="container">
 
-</p>
+      <div class="section-head">
+        <h2>What I can build for your website</h2>
+        <p>
+          Add, remove, or customize these sections for any business: restoration,
+          tree service, roofing, HVAC, cleaning, real estate, contractors, local shops,
+          and service companies.
+        </p>
+      </div>
 
-<div class="hero-buttons">
+      <div class="showcase-grid">
 
-<a href="#" class="btn btn-primary">
+        <article class="feature-card">
+          <div class="icon">⚡</div>
+          <h3>Conversion-Focused Homepages</h3>
+          <p>Modern hero sections, strong calls to action, service previews, trust signals, and clean layouts built to turn visitors into leads.</p>
+        </article>
 
-Call Now
+        <article class="feature-card">
+          <div class="icon">🧮</div>
+          <h3>Interactive Calculators</h3>
+          <p>Cost estimators, quote calculators, savings tools, insurance helpers, ROI tools, and custom calculators for any industry.</p>
+        </article>
 
-</a>
+        <article class="feature-card">
+          <div class="icon">📍</div>
+          <h3>Local SEO Pages</h3>
+          <p>City pages, service-area pages, FAQ sections, schema markup, maps, and content designed for Google search visibility.</p>
+        </article>
 
-<a href="#" class="btn btn-secondary">
+        <article class="feature-card">
+          <div class="icon">📸</div>
+          <h3>Before / After Sections</h3>
+          <p>Image sliders, project galleries, case studies, transformation cards, and proof that your work does not look like it was done by raccoons.</p>
+        </article>
 
-Free Inspection
+        <article class="feature-card">
+          <div class="icon">📝</div>
+          <h3>Lead Forms & Quote Requests</h3>
+          <p>Simple contact forms, emergency forms, inspection requests, file uploads, email routing, and thank-you page tracking.</p>
+        </article>
 
-</a>
+        <article class="feature-card">
+          <div class="icon">⭐</div>
+          <h3>Reviews & Trust Sections</h3>
+          <p>Review cards, testimonial sliders, certification badges, guarantees, insurance logos, and credibility builders.</p>
+        </article>
 
-</div>
+        <article class="feature-card">
+          <div class="icon">📱</div>
+          <h3>Mobile-First Layouts</h3>
+          <p>Fast, responsive pages that look good on phones first because that is where most customers are panic-scrolling.</p>
+        </article>
 
-<div class="trust">
+        <article class="feature-card">
+          <div class="icon">🚨</div>
+          <h3>Emergency Service Pages</h3>
+          <p>Sticky call buttons, urgent CTAs, quick checklists, response timelines, and service pages for high-intent customers.</p>
+        </article>
 
-<div>
+        <article class="feature-card">
+          <div class="icon">📊</div>
+          <h3>Analytics Tracking</h3>
+          <p>Track phone clicks, form submissions, quote buttons, page visits, and marketing campaigns so you know what is working.</p>
+        </article>
 
-<strong>24/7</strong>
+      </div>
+    </div>
+  </section>
 
-Emergency Response
+  <section id="demos">
+    <div class="container">
+      <div class="demo-strip">
+        <div>
+          <h2>Need a demo for your industry?</h2>
+          <p>
+            I can create a live sample homepage or landing page for your business type:
+            restoration, roofing, cleaning, tree service, contractor, local shop, or professional service.
+          </p>
+        </div>
 
-</div>
+        <a href="#contact" class="btn btn-secondary">Ask for a Demo</a>
+      </div>
+    </div>
+  </section>
 
-<div>
+  <section id="industries">
+    <div class="container">
 
-<strong>47+</strong>
+      <div class="section-head">
+        <h2>Demo website ideas</h2>
+        <p>
+          These can become full live demos. Replace the text, images, colors, and features for each business.
+        </p>
+      </div>
 
-Years Serving Our Communities
+      <div class="portfolio-list">
 
-</div>
+        <article class="portfolio-item">
+          <span>Restoration</span>
+          <h3>Water, Fire & Mold Restoration Website</h3>
+          <p>Emergency homepage, insurance claim helper, service pages, before/after gallery, and free inspection form.</p>
+        </article>
 
-<div>
+        <article class="portfolio-item">
+          <span>Tree Service</span>
+          <h3>Tree Removal Lead Website</h3>
+          <p>Service-area SEO pages, quote form, storm cleanup page, cost calculator, and mobile call tracking.</p>
+        </article>
 
-<strong>Insurance</strong>
+        <article class="portfolio-item">
+          <span>Contractor</span>
+          <h3>Handyman / Property Repair Website</h3>
+          <p>Pricing cards, service list, booking form, project gallery, emergency repair CTA, and homeowner FAQ.</p>
+        </article>
 
-Claims Assistance
+        <article class="portfolio-item">
+          <span>Local Business</span>
+          <h3>Small Business Landing Page</h3>
+          <p>Clean one-page site with offer section, service cards, Google reviews, contact form, and map section.</p>
+        </article>
 
-</div>
+      </div>
+    </div>
+  </section>
 
-<div>
+  <section id="contact" class="contact">
+    <div class="container contact-box">
 
-<strong>Licensed</strong>
+      <div class="section-head">
+        <h2>Want a sample page?</h2>
+        <p>
+          Send the business type, services, colors, logo, and any pages you want.
+          I can build a custom demo that shows what your finished website could look like.
+        </p>
 
-Certified Professionals
+        <p>
+          <strong>Email:</strong> your@email.com<br>
+          <strong>Phone:</strong> 000-000-0000
+        </p>
+      </div>
 
-</div>
+      <form>
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" placeholder="Your name" />
 
-</div>
+        <label for="business">Business Type</label>
+        <select id="business" name="business">
+          <option>Restoration Company</option>
+          <option>Tree Service</option>
+          <option>Roofing / Contractor</option>
+          <option>Cleaning Company</option>
+          <option>Local Business</option>
+          <option>Other</option>
+        </select>
 
-</div>
+        <label for="message">What do you need?</label>
+        <textarea id="message" name="message" placeholder="Example: I need a homepage, service pages, quote form, and a calculator."></textarea>
 
-</section>
+        <button class="btn btn-primary" type="submit">Send Request</button>
+      </form>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="container">
+    © 2026 DemoBuild. Custom website demo showcase.
+  </div>
+</footer>
 
 </body>
-
 </html>
