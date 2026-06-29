@@ -526,6 +526,58 @@
     grid-template-columns: 1fr;
   }
 }
+
+    .maintenance-box {
+  margin-top: 22px;
+  padding: 28px;
+  border-radius: var(--radius);
+  border: 1px solid var(--border);
+  background: linear-gradient(145deg, rgba(255,255,255,.085), rgba(255,255,255,.035));
+  box-shadow: var(--shadow);
+  display: grid;
+  grid-template-columns: .85fr 1.15fr;
+  gap: 24px;
+  align-items: start;
+}
+
+.maintenance-box span {
+  color: var(--accent);
+  font-weight: 900;
+  font-size: .82rem;
+  text-transform: uppercase;
+  letter-spacing: .12em;
+}
+
+.maintenance-box h3 {
+  margin: 8px 0 10px;
+  font-size: 1.6rem;
+}
+
+.maintenance-box p {
+  color: var(--muted);
+}
+
+.maintenance-list {
+  display: grid;
+  gap: 12px;
+}
+
+.maintenance-list p {
+  padding: 14px 16px;
+  border-radius: 14px;
+  background: rgba(255,255,255,.06);
+  border: 1px solid var(--border);
+}
+
+.maintenance-list strong {
+  color: white;
+}
+
+@media (max-width: 900px) {
+  .maintenance-box {
+    grid-template-columns: 1fr;
+  }
+}
     
   </style>
 </head>
@@ -2082,7 +2134,73 @@
   </div>
 </section>
 
-  
+    
+  <section id="maintenance">
+  <div class="container">
+
+    <div class="section-head">
+      <h2>Monthly Website Maintenance</h2>
+      <p>
+        Websites are not crockpots. You do not just set them and forget them.
+        I offer monthly maintenance based on the size of the site, complexity,
+        workload, and the tasks needed to keep it running properly.
+      </p>
+    </div>
+
+    <div class="showcase-grid">
+
+      <article class="feature-card">
+        <div class="icon">🔧</div>
+        <h3>Site Updates</h3>
+        <p>
+          I can keep pages, links, images, forms, content, buttons, and basic site
+          details updated so the site does not quietly rot in public.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">📊</div>
+        <h3>Performance Monitoring</h3>
+        <p>
+          I can check Google Analytics and Google Search Console to monitor traffic,
+          search visibility, page performance, popular pages, and user activity.
+        </p>
+      </article>
+
+      <article class="feature-card">
+        <div class="icon">🛡️</div>
+        <h3>Security & Code Checks</h3>
+        <p>
+          I can add GitHub tools like Dependabot and CodeQL to help watch for outdated
+          dependencies, possible security issues, and code problems.
+        </p>
+      </article>
+
+    </div>
+
+    <div class="maintenance-box">
+
+      <div>
+        <span>Included Tools</span>
+        <h3>Optional GitHub Automation</h3>
+        <p>
+          For sites hosted through GitHub, I can help set up automation tools that keep
+          the project cleaner, safer, and easier to monitor.
+        </p>
+      </div>
+
+      <div class="maintenance-list">
+        <p><strong>✅ Dependabot:</strong> keeps future libraries and dependencies up to date.</p>
+        <p><strong>✅ CodeQL:</strong> scans for possible security issues.</p>
+        <p><strong>✅ Lighthouse CI:</strong> checks performance, SEO, accessibility, and best practices.</p>
+        <p><strong>✅ Image optimization:</strong> compresses images so pages load faster.</p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+    
   
   <section id="contact" class="contact">
     <div class="container contact-box">
